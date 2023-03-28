@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-chetan:LYm9BmdGqs5pG3Xl@cluster0.s1nr6vc.mongodb.net/todolistDB").then(() => console.log('MongoDb database Connected!')).catch(error => console.log(error.reason));
+mongoose.connect("mongodb+srv://admin-USERNAME:PASSWORD@cluster0.s1nr6vc.mongodb.net/todolistDB").then(() => console.log('MongoDb database Connected!')).catch(error => console.log(error.reason));
 
 const itemsSchema = new Schema({
     name: String
